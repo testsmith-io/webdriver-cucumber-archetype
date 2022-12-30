@@ -5,7 +5,7 @@
 
     <groupId>io.testsmith</groupId>
     <artifactId>webdriver-cucumber-archetype</artifactId>
-    <version>0.1</version>
+    <version>0.2-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
 
     <name>WebDriver Cucumber Archetype</name>
