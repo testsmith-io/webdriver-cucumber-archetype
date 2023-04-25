@@ -13,9 +13,9 @@
         <owner.version>1.0.12</owner.version>
         <aspectj.version>1.9.9.1</aspectj.version>
         <webdriver-event-listeners.version>0.6</webdriver-event-listeners.version>
-        <selenium-java.version>4.7.2</selenium-java.version>
-        <assertj-core.version>3.23.1</assertj-core.version>
-        <cucumber-reporting.version>5.7.4</cucumber-reporting.version>
+        <selenium-java.version>4.9.0</selenium-java.version>
+        <assertj-core.version>3.24.2</assertj-core.version>
+        <cucumber-reporting.version>5.7.5</cucumber-reporting.version>
         <allure-cucumber7-jvm.version>2.20.0</allure-cucumber7-jvm.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>3.0.0-M7</maven-surefire-plugin.version>
