@@ -4,34 +4,29 @@
 package ${package}.pages;
 
 import ${package}.TestContext;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
 
 public class LoginPage extends BasePage {
 
-    @FindBy(css = "[data-test='email']")
-    private WebElement emailInput;
+    private final By emailInput = By.cssSelector("[data-test='email']");
 
-    @FindBy(css = "[data-test='password']")
-    private WebElement passwordInput;
+    private final By passwordInput = By.cssSelector("[data-test='password']");
 
-    @FindBy(css = "[data-test='login-submit']")
-    private WebElement loginButton;
+    private final By loginButton = By.cssSelector("[data-test='login-submit']");
 
-    @FindBy(css = "[data-test='login-error']")
-    private WebElement errorMessage;
+    private final By errorMessage = By.cssSelector("[data-test='login-error']");
 
     public LoginPage(TestContext context) {
         super(context.driver);
     }
 
     public void login(String email, String password) {
-        emailInput.sendKeys(email);
-        passwordInput.sendKeys(password);
-        loginButton.click();
+        driver.findElement(emailInput).sendKeys(email);
+        driver.findElement(passwordInput).sendKeys(password);
+        driver.findElement(loginButton).click();
     }
 
     public String getErrorMessage() {
-        return errorMessage.getText();
+        return driver.findElement(errorMessage).getText();
     }
 }

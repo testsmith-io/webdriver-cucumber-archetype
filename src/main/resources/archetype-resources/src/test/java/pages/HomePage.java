@@ -4,19 +4,17 @@
 package ${package}.pages;
 
 import ${package}.TestContext;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
 
 public class HomePage extends BasePage {
 
-    @FindBy(css = "[data-test='nav-sign-in']")
-    private WebElement signInLink;
+    private final By signInLink = By.cssSelector("[data-test='nav-sign-in']");
 
     public HomePage(TestContext context) {
         super(context.driver);
     }
 
     public void navigateToSignIn() {
-        signInLink.click();
+        driver.findElement(signInLink).click();
     }
 }

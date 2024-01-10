@@ -4,19 +4,17 @@
 package ${package}.pages;
 
 import ${package}.TestContext;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.By;
 
 public class AccountPage extends BasePage {
 
-    @FindBy(css = "h1[data-test='page-title']")
-    private WebElement pageTitle;
+    private final By pageTitle = By.cssSelector("h1[data-test='page-title']");
 
     public AccountPage(TestContext context) {
         super(context.driver);
     }
 
     public String getPageTitle() {
-        return pageTitle.getText();
+        return driver.findElement(pageTitle).getText();
     }
 }
