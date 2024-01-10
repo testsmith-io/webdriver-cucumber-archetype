@@ -5,7 +5,7 @@
 
     <groupId>io.testsmith</groupId>
     <artifactId>webdriver-cucumber-archetype</artifactId>
-    <version>0.4</version>
+    <version>0.5-SNAPSHOT</version>
     <packaging>maven-archetype</packaging>
 
     <name>WebDriver Cucumber Archetype</name>
@@ -42,7 +42,7 @@
         <connection>scm:git:git@github.com:testsmith-io/webdriver-cucumber-archetype.git</connection>
         <developerConnection>scm:git:git@github.com:testsmith-io/webdriver-cucumber-archetype.git</developerConnection>
         <url>https://github.com/testsmith-io/webdriver-cucumber-archetype</url>
-      <tag>webdriver-cucumber-archetype-0.4</tag>
+      <tag>webdriver-cucumber-archetype-0.1</tag>
   </scm>
 
     <developers>
