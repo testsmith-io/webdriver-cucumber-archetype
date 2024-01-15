@@ -3,7 +3,7 @@
 This project is generated from an archetype. It exists out of Cucumber, Selenium WebDriver, Allure and OWNER as the main dependencies.
 
 
-## Run tests
+## Run tests (defaults to Chrome)
 
 `mvn clean test`
 

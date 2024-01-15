@@ -39,6 +39,7 @@ public class Hooks {
                 new SaveScreenshotOnExceptionListener(originalDriver, "target/log/screenshots"),
                 new HighlightElementsListener()
         ).decorate(originalDriver);
+        this.testContext.driver.manage().window().maximize();
         this.testContext.driver.get(Environment.getProperties().url());
         this.testContext.driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10L));
     }
