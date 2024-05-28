@@ -11,12 +11,12 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <owner.version>1.0.12</owner.version>
-        <aspectj.version>1.9.21</aspectj.version>
+        <aspectj.version>1.9.22.1</aspectj.version>
         <webdriver-event-listeners.version>0.6</webdriver-event-listeners.version>
-        <selenium-java.version>4.16.1</selenium-java.version>
-        <assertj-core.version>3.25.1</assertj-core.version>
+        <selenium-java.version>4.21.0</selenium-java.version>
+        <assertj-core.version>3.26.0</assertj-core.version>
         <cucumber-reporting.version>5.7.5</cucumber-reporting.version>
-        <allure-cucumber7-jvm.version>2.25.0</allure-cucumber7-jvm.version>
+        <allure-cucumber7-jvm.version>2.27.0</allure-cucumber7-jvm.version>
         <maven-compiler-plugin.version>3.12.1</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
         <allure-maven.version>2.12.0</allure-maven.version>
@@ -27,14 +27,14 @@
             <dependency>
                 <groupId>io.cucumber</groupId>
                 <artifactId>cucumber-bom</artifactId>
-                <version>7.15.0</version>
+                <version>7.18.0</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
             <dependency>
                 <groupId>org.junit</groupId>
                 <artifactId>junit-bom</artifactId>
-                <version>5.10.1</version>
+                <version>5.11.0-M2</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
