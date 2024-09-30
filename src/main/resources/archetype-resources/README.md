@@ -31,4 +31,4 @@ This project is generated from an archetype. It exists out of Cucumber, Selenium
 
 ## Update to the latest release version
 
-`versions:update-properties`
+`mvn versions:update-properties`

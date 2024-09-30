@@ -13,13 +13,13 @@
         <owner.version>1.0.12</owner.version>
         <aspectj.version>1.9.22.1</aspectj.version>
         <webdriver-event-listeners.version>0.6</webdriver-event-listeners.version>
-        <selenium-java.version>4.21.0</selenium-java.version>
-        <assertj-core.version>3.26.0</assertj-core.version>
+        <selenium-java.version>4.25.0</selenium-java.version>
+        <assertj-core.version>3.26.3</assertj-core.version>
         <cucumber-reporting.version>5.7.5</cucumber-reporting.version>
-        <allure-cucumber7-jvm.version>2.27.0</allure-cucumber7-jvm.version>
+        <allure-cucumber7-jvm.version>2.29.0</allure-cucumber7-jvm.version>
         <maven-compiler-plugin.version>3.12.1</maven-compiler-plugin.version>
-        <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
-        <allure-maven.version>2.12.0</allure-maven.version>
+        <maven-surefire-plugin.version>3.5.0</maven-surefire-plugin.version>
+        <allure-maven.version>2.14.0</allure-maven.version>
     </properties>
 
     <dependencyManagement>
@@ -102,8 +102,7 @@
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
                     <encoding>UTF-8</encoding>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <release>17</release>
                 </configuration>
             </plugin>
             <plugin>
